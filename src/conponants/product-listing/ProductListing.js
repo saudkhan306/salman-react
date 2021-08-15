@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import Pagination from '../common/Pagination'
 import ProductsHorizontal from './../products/ProductsHorizontal';
-import { productData } from '../products/ProductApiData';
+import {allProducts} from '../../data/products';
 function ProductListing() {
-
+    console.log(allProducts)
+    const productData = allProducts.slice(0,10)
+    console.log(productData)
     const [products, setProducts] = useState(productData);
 
     return <section className="lstngPrdctSec mobileTopMargin">
@@ -13,7 +15,7 @@ function ProductListing() {
                 <div className="lstingRaw">
                     {
                         products.map((product, index) => {
-                            return <ProductsHorizontal product={product} />
+                            return <ProductsHorizontal key={index} product={product} index={index}/>
                         })
                     }
                 </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import video from './../../assets/images/video.m4v';
-import videoBanner from './../../assets/images/videoBanner.jpg';
+// import video from './../../assets/images/video.m4v';
+// import videoBanner from './../../assets/images/videoBanner.jpg';
 
 function QuateBlock() {
     return <section className="qouteSec">
@@ -21,8 +21,8 @@ function QuateBlock() {
                     </div>
                     <Link to="/" className="qtBtn">Lets get Start Today</Link>
                 </div>
-                <video className="qoutBxVideo" autobuffer autoplay="true" controls loop="true" src={video} poster={videoBanner} preload="true">
-                </video>
+                {/* <video className="qoutBxVideo" autobuffer="true" autoPlay={true} controls loop="true" src={video} poster={videoBanner} preload="true"> */}
+                {/* </video> */}
             </div>
         </div>
     </section>

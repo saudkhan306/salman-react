@@ -22,7 +22,7 @@ function Navigation() {
                         <nav className="nav">
                             <ul className="d_f">
                                 <li><NavLink to="/product-listing">Men's Wear</NavLink></li>
-                                <li><NavLink to="/product-listing">Women's Wear</NavLink></li>
+                                <li><NavLink to="/womens-wear">Women's Wear</NavLink></li>
                                 <li><NavLink to="/product-detail">Kid's Wear</NavLink></li>
                             </ul>
                         </nav>

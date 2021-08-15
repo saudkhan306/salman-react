@@ -17,8 +17,9 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/product-listing" component={Listing} />
-        <Route exact path="/product-detail" component={ProductDetails} />
+        <Route  path="/product-listing" component={Listing} />
+        <Route  path="/product-detail/:id" component={ProductDetails} />
+        <Route  path="/womens-wear" component={Listing} />
       </Switch>
       <Footer />
     </div>

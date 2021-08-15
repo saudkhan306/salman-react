@@ -2,15 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function ProductsVertical({product}) {
+    console.log("product.id",product.id)
     return <div className="vPrdctSlide">
         <div className="vPrdctBx">
             <div className="prdctImg">
-                <Link to="/product-detail"> 
+                <Link to={`/product-detail/${product.id}`}> 
                     <img src={product.image} alt="" />
                 </Link>
             </div>
             <div className="prdctTxtCnt">
-                <Link href="/product-detail">
+                <Link to={`/product-detail/${product.id}`}>
                     <h1 className="prdctHdng"> {product.name} </h1>
                 </Link>
                 <div className="prdctPrc">
